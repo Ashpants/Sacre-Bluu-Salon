@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacre Bluu Salon - Choose Your Style</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hubballi', sans-serif;
+            background: linear-gradient(135deg, #dccfbf 0%, #f2f2f0 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 2rem;
+        }
+
+        .logo img {
+            height: 120px;
+            width: auto;
+        }
+
+        h1 {
+            color: #66766c;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: #a1a69f;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .versions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .version-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .version-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .version-card h2 {
+            color: #66766c;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .version-card .description {
+            color: #a1a69f;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #b37b64;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #9a6854;
+        }
+
+        .note {
+            color: #a1a69f;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="sacre_bluu_Final_2.png" alt="Sacre Bluu Salon">
+        </div>
+
+        <h1>Choose Your Preferred Style</h1>
+        <p>Preview the 3 different layout options and pick your favorite!</p>
+
+        <div class="versions-grid">
+            <div class="version-card">
+                <h2>Version 1</h2>
+                <h3 style="color: #b37b64; margin-bottom: 1rem;">Modern Minimal</h3>
+                <p class="description">Clean, contemporary design with balanced spacing. Professional and versatile.</p>
+                <a href="index-v1-modern.html" class="btn">View This Style</a>
+            </div>
+
+            <div class="version-card">
+                <h2>Version 2</h2>
+                <h3 style="color: #b37b64; margin-bottom: 1rem;">Classic Elegant</h3>
+                <p class="description">Spacious, formal layout with horizontal service cards. Traditional and sophisticated.</p>
+                <a href="index-v2-classic.html" class="btn">View This Style</a>
+            </div>
+
+            <div class="version-card">
+                <h2>Version 3</h2>
+                <h3 style="color: #b37b64; margin-bottom: 1rem;">Contemporary Grid</h3>
+                <p class="description">Compact, modern layout with split hero and grid cards. Dynamic and efficient.</p>
+                <a href="index-v3-contemporary.html" class="btn">View This Style</a>
+            </div>
+        </div>
+
+        <p class="note">All versions use the same style guide colors and contain the same content - only the layout differs!</p>
+    </div>
+</body>
+</html>
