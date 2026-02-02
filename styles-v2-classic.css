@@ -145,6 +145,13 @@ h3 {
     width: auto;
 }
 
+.salon-name {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #b37b64;
+    letter-spacing: 2px;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
