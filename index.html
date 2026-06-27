@@ -3,124 +3,442 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sacre Bluu Salon - Choose Your Style</title>
+    <title>Sacre Bluu Salon - Hair & Nail Salon in Clinton, UT</title>
+    <meta name="description" content="Sacre Bluu Salon offers professional hair and nail services in Clinton, UT. Book your appointment today for a transformative beauty experience.">
+    <link rel="stylesheet" href="styles-v3-contemporary.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Hubballi', sans-serif;
-            background: linear-gradient(135deg, #dccfbf 0%, #f2f2f0 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            text-align: center;
-        }
-
-        .logo {
-            margin-bottom: 2rem;
-        }
-
-        .logo img {
-            height: 120px;
-            width: auto;
-        }
-
-        h1 {
-            color: #66766c;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            color: #a1a69f;
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-        }
-
-        .versions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .version-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .version-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-        }
-
-        .version-card h2 {
-            color: #66766c;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-
-        .version-card .description {
-            color: #a1a69f;
-            margin-bottom: 1.5rem;
-            line-height: 1.6;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #b37b64;
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #9a6854;
-        }
-
-        .note {
-            color: #a1a69f;
-            font-size: 0.9rem;
-            margin-top: 2rem;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="sacre_bluu_Final_2.png" alt="Sacre Bluu Salon">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#apprenticeship">Apprenticeship</a></li>
+                <li><a href="#join">Join Our Team</a></li>
+                <li><a href="https://www.vagaro.com/sacrebluusalon/services" target="_blank" class="btn-book">Book Now</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <h1>Welcome to Sacre Bluu Salon</h1>
-        <p>View the current website design</p>
-
-        <div class="versions-grid">
-            <div class="version-card">
-                <h2>Current Site</h2>
-                <h3 style="color: #b37b64; margin-bottom: 1rem;">Contemporary Simple</h3>
-                <p class="description">Modern layout with clean navigation and mobile-friendly booking. Features dedicated pages for apprenticeship and booth rentals.</p>
-                <a href="index-v4-contemporary.html" class="btn">View Site</a>
+    <!-- Hero Section - Split Layout -->
+    <section id="home" class="hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <h1>Welcome!</h1>
+                <p class="hero-description">
+                    At our beauty studio in Clinton, UT, we offer a full range of hair and nail services designed to help you feel your best. More than just a place for self-care, we're a space where you can show up exactly as you are and leave feeling supported, seen, and beautiful. Rooted in the spirit of growth and authenticity, our team is here to help you shine inside and out!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary">Book Appointment</a>
+                    <a href="#services" class="btn btn-secondary">View Services</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="sacre_bluu_Final_2.png" alt="Sacre Bluu Salon" class="hero-logo-img">
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Quick Contact Info Bar -->
+    <section class="contact-bar">
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>Clinton, UT</span>
+                </div>
+                <div class="contact-item">
+                    <span>(801) 513-3312 - Best reached by text</span>
+                </div>
+                <div class="contact-item">
+                    <span>Mon-Sat: 9AM - 6PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section - Grid Cards -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+
+            <div class="services-grid">
+                <!-- Hair Services -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/hair-1.jpg" alt="Hair Services">
+                        <div class="service-overlay">
+                            <h3>Hair Services</h3>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <ul class="service-list">
+                            <li>Haircuts for ages 10+</li>
+                            <li>All Over Color</li>
+                            <li>Blonding</li>
+                            <li>Highlights</li>
+                            <li>Lowlights</li>
+                            <li>Root Retouch</li>
+                            <li>All Over Lightener</li>
+                            <li>Balayage</li>
+                            <li>Vivids</li>
+                            <li>K-tip and Sew-in Extensions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Nail Services -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="images/nails-1.jpg" alt="Nail Services">
+                        <div class="service-overlay">
+                            <h3>Nail Services</h3>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <ul class="service-list">
+                            <li>Structured Gel Full Sets + Fills</li>
+                            <li>Acrylic Full Sets + Fills</li>
+                            <li>Gel-X</li>
+                            <li>Gel Polish Manicures</li>
+                            <li>Gel Toes</li>
+                            <li>Dry Spa Pedicures</li>
+                            <li>Natural nails or added length</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section - Centered -->
+    <section id="booking" class="booking-section">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <div style="background: linear-gradient(135deg, #dccfbf 0%, #f2f2f0 100%); padding: 4rem 3rem; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                    <h3 style="color: #66766c; font-size: 2rem; margin-bottom: 1.5rem;">Ready to Book?</h3>
+                    <p style="color: #a1a69f; font-size: 1.2rem; margin-bottom: 2.5rem; line-height: 1.7;">
+                        Click below to view our available appointments and book your service. Our online booking system is updated regularly with same-day and next-day openings.
+                    </p>
+                    <a href="https://www.vagaro.com/sacrebluusalon/services" target="_blank" class="btn btn-primary" style="font-size: 1.3rem; padding: 1.2rem 3rem;">Book Your Appointment</a>
+                    <p style="color: #a1a69f; margin-top: 2rem; font-size: 1rem;">
+                        Please review our <a href="#policies" style="color: #b37b64;">salon policies</a> before booking.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section - Grid with Hover Effects -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">Our talented team is here to bring your vision to life</p>
+
+            <!-- Hair Stylists -->
+            <h3 class="team-group-title">Hair Stylists</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/el.jpg" alt="El">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/curlsupsanddyes" class="portfolio-link" target="_blank">@curlsupsanddyes</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>El</h3>
+                        <p class="specialty">Colour services, traditional/non-traditional cuts, all genders</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/ireland.jpg" alt="Ireland">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/irelandbrooke.beauty" class="portfolio-link" target="_blank">@irelandbrooke.beauty</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Ireland</h3>
+                        <p class="specialty">Color, blonding</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/scotlyn.jpg" alt="Scotlyn">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/looksby.scotti" class="portfolio-link" target="_blank">@looksby.scotti</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Scotlyn</h3>
+                        <p class="specialty">Color, blonding, sew-in & k-tip extensions</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/whitney.jpg" alt="Whitney">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/simply_youbywhit" class="portfolio-link" target="_blank">@simply_youbywhit</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Whitney</h3>
+                        <p class="specialty">Color, blonding, sew-in extensions</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nail Technicians -->
+            <h3 class="team-group-title">Nail Technicians</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/dalton.jpg" alt="Dalton">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/deezz.nailz" class="portfolio-link" target="_blank">@deezz.nailz</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dalton</h3>
+                        <p class="specialty">Structured gel, nail art</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/erin.jpg" alt="Erin">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/erinjensennails" class="portfolio-link" target="_blank">@erinjensennails</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Erin (Owner)</h3>
+                        <p class="specialty">Russian manicure, structured gel on natural nails</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/lacey.jpg" alt="Lacey">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/laceylou_nails" class="portfolio-link" target="_blank">@laceylou_nails</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Lacey</h3>
+                        <p class="specialty">Structured gel extensions, nail art, dry pedicures</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/macey.jpg" alt="Macey">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/nailsby.maceyy" class="portfolio-link" target="_blank">@nailsby.maceyy</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Macey</h3>
+                        <p class="specialty">Structured gel on natural nails, detailed nail art</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/maloree.jpg" alt="Maloree">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/nails.x.mal" class="portfolio-link" target="_blank">@nails.x.mal</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Maloree</h3>
+                        <p class="specialty">Acrylic, structured gel, nail art</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/mekenzie.jpg" alt="Mekenzie">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/kenziecosmetixs" class="portfolio-link" target="_blank">@kenziecosmetixs</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Mekenzie</h3>
+                        <p class="specialty">Acrylic & gel, nail art, extensions</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/natalie.jpg" alt="Natalie">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/nataliasnails___" class="portfolio-link" target="_blank">@nataliasnails___</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Natalie</h3>
+                        <p class="specialty">Acrylic, gel-x, structured gel overlays, dry pedicure</p>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/team/piper.jpg" alt="Piper">
+                        <div class="team-overlay">
+                            <a href="https://www.instagram.com/pipern.nails" class="portfolio-link" target="_blank">@pipern.nails</a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Piper</h3>
+                        <p class="specialty">Gel, acrylic, nail art</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nail Tech Apprenticeship Section -->
+    <section id="apprenticeship" class="opportunities">
+        <div class="container">
+            <h2 class="section-title">Nail Tech Apprenticeship</h2>
+            <p class="section-subtitle">Dreaming of a career in nails? Let's make it happen!</p>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="opportunity-featured">
+                    <p>Join our Nail Apprentice Program and get hands-on training in a real salon environment. Learn modern nail techniques while earning income from day one.</p>
+                    <ul class="opportunity-details">
+                        <li>Earn income during training</li>
+                        <li>Real salon experience from day 1</li>
+                        <li>Up-to-date curriculum focused on modern techniques</li>
+                        <li>Mentorship to help you build your business after graduating</li>
+                    </ul>
+                    <a href="apprenticeship.html" class="btn btn-primary">Learn More About the Program</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Team Section -->
+    <section id="join" class="booking-section">
+        <div class="container">
+            <h2 class="section-title">Join Our Team</h2>
+
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="color: #a1a69f; font-size: 1.15rem; line-height: 1.8; margin-bottom: 2rem;">
+                    We offer booth rental spaces for both hair stylists and nail technicians. At Sacre Bluu, you'll work in a professional, modern environment surrounded by a supportive community that believes in lifting each other up. Build your business your way while being part of something special.
+                </p>
+                <a href="booth-rentals.html" class="btn btn-primary">View Booth Rental Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salon Policies Section -->
+    <section id="policies" class="policies-section">
+        <div class="container">
+            <h2 class="section-title">Salon Policies</h2>
+
+            <div class="policies-grid">
+                <div class="policy-card">
+                    <h3>Cancellation Policy</h3>
+                    <p><strong>24 hours notice required</strong> for cancellations or rescheduling.</p>
+                    <p>Appointments cancelled with less than 24 hours notice will incur a <strong>50% service fee</strong>.</p>
+                </div>
+
+                <div class="policy-card">
+                    <h3>No-Show Policy</h3>
+                    <p>Clients who don't appear for scheduled appointments will be charged <strong>100% of the service cost</strong>.</p>
+                </div>
+
+                <div class="policy-card">
+                    <h3>Payment & Booking</h3>
+                    <p><strong>A credit card must be kept on file</strong> to reserve any service.</p>
+                    <p>This is required for all appointments.</p>
+                </div>
+
+                <div class="policy-card">
+                    <h3>Children Policy</h3>
+                    <p>Please refrain from bringing children to the salon unless they are scheduled to receive services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <h3>Location</h3>
+                    <p>2207 W 1800 N SUITE B<br>
+                    Clinton, UT 84015<br>
+                    <em style="color: #b37b64;">Located in the same building as Comfort Dental</em></p>
+
+                    <h3>Hours</h3>
+                    <p>Monday - Saturday: 9:00 AM - 6:00 PM<br>By Appointment Only</p>
+
+                    <h3>Contact</h3>
+                    <p>Phone: (801) 513-3312<br>
+                    Best way to reach us is by text<br>
+                    Email: sacrebluusalon@gmail.com</p>
+
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/sacrebluusalon" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/share/1ECDSo3Jy6/" target="_blank">Facebook</a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <!-- Google Maps Embed -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.8!2d-112.0655!3d41.1526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8753057e8c8e8e5!2s2207+W+1800+N+Suite+B,+Clinton,+UT+84015!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="sacre_bluu_Final_2.png" alt="Sacre Bluu Logo" class="footer-logo">
+                    <p>renew . grow . glow</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#policies">Salon Policies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Opportunities</h4>
+                    <ul>
+                        <li><a href="apprenticeship.html">Apprenticeship</a></li>
+                        <li><a href="booth-rentals.html">Booth Rentals</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sacre Bluu Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
